@@ -1,0 +1,6 @@
+{
+  "name": "Funk Monk Hostel",
+  "description": "An award-winning boutique eco-stay and design hostel nestled in the serenity of Auroville. Experience immersive visual storytelling, creative residency, and premium hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

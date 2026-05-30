@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funk Monk Hostel | Eco-Luxury Sanctuary & Boutique Stay in Auroville</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://r1imghtlak.mmtcdn.com/cca0d34e-bff8-4e94-ae3a-5670e95a5a55.jpg?downsize=32:32" />
+    <!-- Custom Hand-Crafted Style sheet -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="no-scroll">
+
+    <!-- 1. Custom Precision Cursor follower ring -->
+    <div id="cursor-dot" class="custom-cursor" aria-hidden="true"></div>
+    <div id="cursor-follower" class="custom-cursor-follower" aria-hidden="true"></div>
+
+    <!-- 2. Elegant Loading Seq Screen -->
+    <div id="loader-overlay" class="loader-overlay" aria-hidden="true">
+      <div id="loader-logo" class="loader-logo">FUNK MONK</div>
+      <div class="loader-line">
+        <div class="loader-line-active"></div>
+      </div>
+    </div>
+
+    <!-- 3. Transparency Sticky Navigation Header -->
+    <header id="main-header">
+      <div id="brand-logo" class="hotel-logo">FUNK MONK</div>
+      <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a id="lnk-hero" href="#hero">The Sanctuary</a></li>
+        <li><a id="lnk-experience" href="#experience">The Vibe</a></li>
+        <li><a id="lnk-features" href="#features">Highlights</a></li>
+        <li><a id="lnk-rooms" href="#rooms">Sanctuary Rooms</a></li>
+        <li><a id="lnk-gallery" href="#gallery">Visuals</a></li>
+        <li><a id="lnk-locate" href="#locate">Locate Us</a></li>
+      </ul>
+      <button id="nav-reserve-btn" class="reserve-nav-btn">Reserve Stay</button>
+    </header>
+
+    <!-- 4. Immersive Hero Canvas Section -->
+    <main>
+      <section id="hero" class="hero">
+        <!-- Floating organic meshes -->
+        <div class="ambient-gradient-mesh" aria-hidden="true">
+          <div class="gradient-blob-1"></div>
+          <div class="gradient-blob-2"></div>
+          <div class="gradient-blob-3"></div>
+        </div>
+        
+        <!-- Interactive Vector Motion lines canvas -->
+        <canvas id="hero-motion-canvas"></canvas>
+        
+        <div id="hero-content" class="hero-content">
+          <span id="hero-tag" class="hero-tag">Auroville Boutique Retreat</span>
+          <div id="hero-title-container" class="hero-title-container">
+            <h1 id="hero-title" class="hero-title">A Sanctuary To <br><span>Create Own</span> Story.</h1>
+          </div>
+          <p id="hero-desc" class="hero-desc">
+            Nestled inside the serene Motherland Farms near Kottakkarai, Funk Monk blends eco-luxury architecture with deep bohemian soul. A peaceful canvas designed for creators, seekers, and free spirits.
+          </p>
+          <div id="hero-actions" class="hero-actions">
+            <button id="btn-hero-reserve" class="btn-primary" onclick="document.getElementById('booking-inquiry-portal').scrollIntoView({behavior: 'smooth'})">Explore Cottages</button>
+            <button id="btn-hero-learn" class="btn-secondary" onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})">Our Philosophy</button>
+          </div>
+        </div>
+        
+        <div id="hero-scroll" class="hero-scroll" aria-hidden="true">
+          <span class="scroll-text">Scroll To Experience</span>
+          <div class="scroll-icon"></div>
+        </div>
+      </section>
+
+      <!-- 5. About / Immersive Storytelling Section -->
+      <section id="experience" class="about-section">
+        <div class="section-container">
+          <div id="about-grid" class="about-grid">
+            <div id="about-text-content" class="about-text-content reveal-on-scroll">
+              <span class="mono-tag">True Living Concept</span>
+              <h2 id="about-title" class="sec-title">Escape the default. <br><span>Create own</span> rhythms.</h2>
+              <p id="about-p-lead" class="about-para-lead">
+                No templated scripts. Just ancient banyan canopies, birdsong morning alerts, and design-led spaces crafted from recycled woods and organic bricks.
+              </p>
+              <p id="about-p-body" class="about-para-body">
+                Funk Monk is an award-winning eco-stay hospitality concept residing in Auroville, Tamil Nadu. Merging the calm discipline of monastic minimalism with the organic, expressive soul of bohemian art, we have designed a retreat where digital nomads, writers, couples, and mindful travelers can disconnect from noise and reconnect with soil.
+              </p>
+              
+              <div id="about-fact-grid" class="fact-grid">
+                <div class="fact-item">
+                  <h4 id="fact-rating">4.7★</h4>
+                  <p>Guest Rated Platform</p>
+                </div>
+                <div class="fact-item">
+                  <h4 id="fact-distance">08 Min</h4>
+                  <p>From Matrimandir</p>
+                </div>
+              </div>
+            </div>
+            
+            <div id="about-visuals" class="about-visuals reveal-on-scroll" style="transition-delay: 200ms;">
+              <!-- Beautiful overlapping framing displaying real imagery of the property -->
+              <div id="frame-about-main" class="image-frame about-img-main">
+                <img referrerpolicy="no-referrer" src="https://r1imghtlak.mmtcdn.com/e39844b6-7b2a-423a-a4e3-42ce498fbd95.jpg?downsize=540:*" alt="Lush green tropical jungle approach of Funk Monk" />
+              </div>
+              <div id="frame-about-sub" class="image-frame about-img-sub">
+                <img referrerpolicy="no-referrer" src="https://cf.bstatic.com/xdata/images/hotel/max500/868095596.jpg?k=22cc03bd5044a1af13c41535e515afc31d3b4bb864ff90c4406f45f8fe83300a&o=" alt="Zen garden courtyards for quiet sitting" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Property Highlights / Curated Features Section -->
+      <section id="features" class="highlights-section">
+        <div class="section-container">
+          <div id="features-header" class="sec-header reveal-on-scroll">
+            <span class="mono-tag">Our Curated Standards</span>
+            <h2 id="features-title" class="sec-title">Spaces sculpted for <br><span>exceptional comfort</span>.</h2>
+          </div>
+          
+          <div id="highlights-grid" class="highlights-grid reveal-on-scroll" style="transition-delay: 155ms;">
+            <!-- Card 1: Kitchenette -->
+            <div id="hl-card-kitchenette" class="highlight-card">
+              <div class="highlight-icon-wrapper" aria-hidden="true">
+                <!-- SVG Icon for Kitchenette (Chef hat/pan concept) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <h3>Artisan Kitchenette</h3>
+              <p>Fully functional kitchen spaces equipped with fresh water, basic organic kitchenwares, and tools for couples and slow-cooking enthusiasts.</p>
+            </div>
+            
+            <!-- Card 2: 24/7 Power Backup -->
+            <div id="hl-card-power" class="highlight-card">
+              <div class="highlight-icon-wrapper" aria-hidden="true">
+                <!-- SVG Icon for Power Backup (Lightning bolt in shield) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+              </div>
+              <h3>Guaranteed Power</h3>
+              <p>Uninterrupted high-capacity power backup backup grid ensuring cold air conditioning, zero internet drops, and seamless work sessions.</p>
+            </div>
+            
+            <!-- Card 3: Multilingual Staff -->
+            <div id="hl-card-languages" class="highlight-card">
+              <div class="highlight-icon-wrapper" aria-hidden="true">
+                <!-- SVG Icon for Staff / Global language -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/>
+                </svg>
+              </div>
+              <h3>Multilingual Crew</h3>
+              <p>Exquisite hospitality from our Tamil, English, and Hindi speaking onsite host team, assisting you with local Auroville secret spots.</p>
+            </div>
+            
+            <!-- Card 4: Digital Nomad Desks -->
+            <div id="hl-card-nomad" class="highlight-card">
+              <div class="highlight-icon-wrapper" aria-hidden="true">
+                <!-- SVG Icon for Work Desk -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 14H21M3 18H21M4 6H20a2 2 0 0 1 2 2v6H2V8a2 2 0 0 1 2-2z"/>
+                </svg>
+              </div>
+              <h3>Dedicated Work Desk</h3>
+              <p>Comfortable solid teak wood desk spots paired with premium ergonomic seating, tailored specifically for focusing artists and remote engineers.</p>
+            </div>
+            
+            <!-- Card 5: Indoor Games room -->
+            <div id="hl-card-indoor" class="highlight-card">
+              <div class="highlight-icon-wrapper" aria-hidden="true">
+                <!-- SVG Icon for Games -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 12h4M14 8h2M14 12h2M14 16h2M6 8h4"/>
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                </svg>
+              </div>
+              <h3>Indoor Games Loft</h3>
+              <p>Recreational shared space filled with select board games, a library of arts and philosophy, and premium retro musical instruments.</p>
+            </div>
+            
+            <!-- Card 6: Terraces & Balancing sitouts -->
+            <div id="hl-card-terraces" class="highlight-card">
+              <div class="highlight-icon-wrapper" aria-hidden="true">
+                <!-- SVG Icon for Terraces/Balcony -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 14a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zM3 8h18M12 2v6"/>
+                </svg>
+              </div>
+              <h3>Skywood Balconies</h3>
+              <p>Elevated wooden sit-outs and decks weaving around age-old forest canopies, providing unmatched shade for early morning yoga or night stargazing.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Accommodation / Rooms Section -->
+      <section id="rooms" class="rooms-section">
+        <div class="section-container">
+          <div id="rooms-header" class="sec-header reveal-on-scroll">
+            <span class="mono-tag">Exquisite Rooms & Pods</span>
+            <h2 id="rooms-title" class="sec-title">Sleep wrapped in <br><span>handcrafted design</span>.</h2>
+          </div>
+          
+          <div id="rooms-showcase" class="rooms-showcase">
+            <!-- Room 1: The Monk Suite -->
+            <div id="room-monk-suite" class="room-row reveal-on-scroll">
+              <div class="room-visual">
+                <div class="room-badges">
+                  <span class="room-badge">Couple Friendly</span>
+                  <span class="room-badge">Private Terrace</span>
+                </div>
+                <img id="img-monk-suite" referrerpolicy="no-referrer" src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202405181123313467-c35e0877-4ed0-487b-904f-49d077dba8f4.jpg?&output-quality=75&downsize=520:350&crop=520:350;0,20&output-format=webp&downsize=252:160&crop=252:160" alt="Boutique premium private room - The Monk Suite" />
+              </div>
+              
+              <div class="room-info">
+                <h3 class="room-title">The Monk Private Suite</h3>
+                <p class="room-description text-muted">
+                  A serene, spacious sanctuary for couples and solo creators demanding complete focus and privacy. Features a minimalist king-size canvas bed, custom earth-brick exposed walls, sun-drenched private balcony, and direct banyan tree outlooks.
+                </p>
+                <div class="room-specs">
+                  <div class="spec-item">
+                    <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M2 20h20M5 17V5a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v12M9 17v-4h6v4"/>
+                    </svg>
+                    <span>Premium Artisan Kitchenette & Fridge</span>
+                  </div>
+                  <div class="spec-item">
+                    <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                    </svg>
+                    <span>Independent high-power Workspace & AC</span>
+                  </div>
+                  <div class="spec-item">
+                    <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                      <rect x="9" y="9" width="6" height="6"/>
+                      <line x1="9" y1="1" x2="9" y2="4"/>
+                      <line x1="15" y1="1" x2="15" y2="4"/>
+                    </svg>
+                    <span>Luxury Toiletries, Mineral Water, and Steam Ironing</span>
+                  </div>
+                </div>
+                <div class="room-footer">
+                  <div class="room-price">₹3,500 <span>/ night</span></div>
+                  <button class="btn-room-inquire" onclick="document.getElementById('room-select').value = 'monk-suite'; document.getElementById('booking-inquiry-portal').scrollIntoView({behavior: 'smooth'})">Hold This Space</button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Room 2: The Social Dorms -->
+            <div id="room-social-dorms" class="room-row reversed reveal-on-scroll">
+              <div class="room-visual">
+                <div class="room-badges">
+                  <span class="room-badge">Architectural Wood Bunks</span>
+                  <span class="room-badge">Privacy curtains</span>
+                </div>
+                <img id="img-social-dorms" referrerpolicy="no-referrer" src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202405181123313467-b3df5381-b13b-462d-b598-5a8238d46184.jpg?&output-quality=75&downsize=520:350&crop=520:350;0,20&output-format=webp&downsize=252:160&crop=252:160" alt="Custom modular bunk system - The Social Bunks" />
+              </div>
+              
+              <div class="room-info">
+                <h3 class="room-title">The Social Cabin Bunks</h3>
+                <p class="room-description text-muted">
+                  Reject raw cold bunk beds. Experience heavy-oak hand-carved modular cabins built with personal power adapters, cozy ambient reading spotlights, private heavy blackout velvet curtains, and large slide-out locker vaults.
+                </p>
+                <div class="room-specs">
+                  <div class="spec-item">
+                    <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                    </svg>
+                    <span>Lounge Living spaces, Terraces and Games Hall Access</span>
+                  </div>
+                  <div class="spec-item">
+                    <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polygon points="16.2 7.8 16.2 16.2 7.8 16.2 7.8 7.8 16.2 7.8"/>
+                    </svg>
+                    <span>Shared Nomad Kitchen Amenities & Caretaker Desk</span>
+                  </div>
+                  <div class="spec-item">
+                    <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    <span>24/7 Power Security, High-Speed Wi-Fi and Housekeeping</span>
+                  </div>
+                </div>
+                <div class="room-footer">
+                  <div class="room-price">₹1,200 <span>/ night</span></div>
+                  <button class="btn-room-inquire" onclick="document.getElementById('room-select').value = 'social-bunks'; document.getElementById('booking-inquiry-portal').scrollIntoView({behavior: 'smooth'})">Claim A Pod</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. WHY STAY HERE SECTION -->
+      <section id="why" class="why-section">
+        <div class="rotating-ornament" aria-hidden="true">
+          <div class="rotating-ornament-inner"></div>
+        </div>
+        
+        <div class="section-container">
+          <div id="why-header" class="sec-header reveal-on-scroll">
+            <span class="mono-tag">Auroville Heritage</span>
+            <h2 id="why-title" class="sec-title text-light">A sanctuary carved <br><span>into forest soil</span>.</h2>
+          </div>
+          
+          <div id="why-grid" class="why-grid reveal-on-scroll" style="transition-delay: 150ms;">
+            <div id="why-block-1" class="why-card">
+              <span class="why-card-num">01 // THE FARM RESIDENCY</span>
+              <h3>Nestled inside Mother Land Farms</h3>
+              <p>Forget roadside horns. We occupy premium realestate hidden deep within Mother Land Farm orchard. Sleep encircled by organically grown cashew files, organic mango groves, and pristine country soil.</p>
+            </div>
+            
+            <div id="why-block-2" class="why-card">
+              <span class="why-card-num">02 // CREATORS & NOMADS</span>
+              <h3>Structured for Daily Creation</h3>
+              <p>We are a communal creative sanctuary. High-capacity optic fiber pathways, silent library zones, spacious custom wooden tables, and unlimited access to fresh mineral water keep you operating at peak levels.</p>
+            </div>
+            
+            <div id="why-block-3" class="why-card">
+              <span class="why-card-num">03 // INTUITIVE ECO-ARCHITECTURE</span>
+              <h3>Crafted in Deep Respect</h3>
+              <p>Rooted in Auroville\'s high-concept sustainability ethics. Built with earth-crafted compressed clay brick walls, natural cool ventilation channels, solar-fueled thermal backups, and native flora filters.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. GALLERY SECTION -->
+      <section id="gallery" class="gallery-section">
+        <div class="section-container">
+          <div id="gallery-header" class="sec-header reveal-on-scroll">
+            <span class="mono-tag">The Chronicle Collection</span>
+            <h2 id="gallery-title" class="sec-title">Moments we crafted. <br><span>Explore the sanctuary</span>.</h2>
+          </div>
+          
+          <!-- Tab Filters -->
+          <ul id="gallery-filters" class="gallery-filters reveal-on-scroll">
+            <li><button class="gallery-filter-btn active" data-filter="all">Show All</button></li>
+            <li><button class="gallery-filter-btn" data-filter="spaces">Common Spaces</button></li>
+            <li><button class="gallery-filter-btn" data-filter="rooms">Accommodations</button></li>
+            <li><button class="gallery-filter-btn" data-filter="nature">Botanical Nature</button></li>
+          </ul>
+          
+          <!-- Masonry Grid with strictly verified images of Funk Monk -->
+          <div id="gallery-masonry" class="gallery-masonry reveal-on-scroll" style="transition-delay: 120ms;">
+            
+            <!-- Item 1: Forest Approach (Nature) -->
+            <div class="gallery-item" data-category="nature">
+              <img referrerpolicy="no-referrer" src="https://r1imghtlak.mmtcdn.com/e39844b6-7b2a-423a-a4e3-42ce498fbd95.jpg?downsize=540:*" alt="Lush jungle approach to Funk Monk Hostel" />
+              <div class="gallery-hover-overlay">
+                <span class="gallery-tag">Botanical Nature</span>
+                <h3 class="gallery-name">Lush Sanctuary Canopy Pathway</h3>
+              </div>
+            </div>
+            
+            <!-- Item 2: Atrium Lounge (Spaces) -->
+            <div class="gallery-item" data-category="spaces">
+              <img referrerpolicy="no-referrer" src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202405181123313467-9d0ec706-4a45-4e22-8c62-a84623ac7f03.jpg?downsize=540:*" alt="Creative common living room space" />
+              <div class="gallery-hover-overlay">
+                <span class="gallery-tag">Common Spaces</span>
+                <h3 class="gallery-name">The Creative Lounge & Library Atrium</h3>
+              </div>
+            </div>
+            
+            <!-- Item 3: Cozy Room (Rooms) -->
+            <div class="gallery-item" data-category="rooms">
+              <img referrerpolicy="no-referrer" src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202405181123313467-c35e0877-4ed0-487b-904f-49d077dba8f4.jpg?&output-quality=75&downsize=520:350&crop=520:350;0,20&output-format=webp&downsize=252:160&crop=252:160" alt="Private Minimalist Suite cottage" />
+              <div class="gallery-hover-overlay">
+                <span class="gallery-tag">Accommodations</span>
+                <h3 class="gallery-name">The Monk Private Cottage Room</h3>
+              </div>
+            </div>
+
+            <!-- Item 4: Zen Courtyard Seats (Spaces) -->
+            <div class="gallery-item" data-category="spaces">
+              <img referrerpolicy="no-referrer" src="https://cf.bstatic.com/xdata/images/hotel/max500/868095596.jpg?k=22cc03bd5044a1af13c41535e515afc31d3b4bb864ff90c4406f45f8fe83300a&o=" alt="Zen garden courtyards for quiet booking details" />
+              <div class="gallery-hover-overlay">
+                <span class="gallery-tag">Common Spaces</span>
+                <h3 class="gallery-name">The Zen Courtyard Seating</h3>
+              </div>
+            </div>
+            
+            <!-- Item 5: Forest sitout (Nature) -->
+            <div class="gallery-item" data-category="nature">
+              <img referrerpolicy="no-referrer" src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202405181123313467-8543d381-332c-4599-9765-7d4524c780d4.jpg?downsize=540:*" alt="Skywood deck terraces in open woodland trees" />
+              <div class="gallery-hover-overlay">
+                <span class="gallery-tag">Botanical Nature</span>
+                <h3 class="gallery-name">Our Treehouse Shaded Skydeck</h3>
+              </div>
+            </div>
+
+            <!-- Item 6: Lobby Reception (Spaces) -->
+            <div class="gallery-item" data-category="spaces">
+              <img referrerpolicy="no-referrer" src="https://r1imghtlak.mmtcdn.com/cca0d34e-bff8-4e94-ae3a-5670e95a5a55.jpg?&output-quality=75&downsize=520:350&crop=520:350;0,7&output-format=webp&downsize=480:336&crop=480:336" alt="Sanctuary lobby and desk reception" />
+              <div class="gallery-hover-overlay">
+                <span class="gallery-tag">Common Spaces</span>
+                <h3 class="gallery-name">The Sanctuary Desk & Lounge Oasis</h3>
+              </div>
+            </div>
+
+            <!-- Item 7: Heavy Oak Bunks (Rooms) -->
+            <div class="gallery-item" data-category="rooms">
+              <img referrerpolicy="no-referrer" src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202405181123313467-b3df5381-b13b-462d-b598-5a8238d46184.jpg?&output-quality=75&downsize=520:350&crop=520:350;0,20&output-format=webp&downsize=252:160&crop=252:160" alt="Beautifully partitioned luxury wooden cabins dorm bunks" />
+              <div class="gallery-hover-overlay">
+                <span class="gallery-tag">Accommodations</span>
+                <h3 class="gallery-name">Artisan Heavy Oak Cabin Pods</h3>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. REAL-TIME GALLERY LIGHTBOX (Widget Popup) -->
+      <div id="gallery-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous Image">&#8249;</button>
+        <div class="lightbox-content-wrapper">
+          <img class="lightbox-img" src="" alt="Enlarged view" />
+          <h4 class="lightbox-caption">Loading Sanctuary details...</h4>
+          <span class="lightbox-tag">Funk Monk Gallery</span>
+        </div>
+        <button class="lightbox-nav lightbox-next" aria-label="Next Image">&#8250;</button>
+      </div>
+
+      <!-- 11. LOCATION EXPERIENCE & BEAUTIFULLY CUSTOM MAP -->
+      <section id="locate" class="location-section">
+        <div class="section-container">
+          <div id="location-grid" class="location-grid">
+            <div id="location-info-wrapper" class="location-info reveal-on-scroll">
+              <span class="mono-tag">Auroville Oasis Sanctuary</span>
+              <h2 id="location-title" class="sec-title">Getting here is a <br><span>beautiful journey</span>.</h2>
+              <p id="location-sub-text" class="location-lead text-muted">
+                SF No. 248/3B 2B, Mother Land Farm, Kottakarai, Vanur, Auroville.
+              </p>
+              
+              <!-- Interesting nearby destinations -->
+              <div id="spot-list" class="spot-list">
+                <div class="spot-item">
+                  <div class="spot-num">01</div>
+                  <div class="spot-details">
+                    <h4>The Sacred Matrimandir Dome</h4>
+                    <p>8-minute bicycle ride through rustic red-dirt clay paths.</p>
+                  </div>
+                </div>
+                <div class="spot-item">
+                  <div class="spot-num">02</div>
+                  <div class="spot-details">
+                    <h4>Auroville Botanical Gardens</h4>
+                    <p>6 minutes direct distance. A peaceful exploration sanctuary of native species.</p>
+                  </div>
+                </div>
+                <div class="spot-item">
+                  <div class="spot-num">03</div>
+                  <div class="spot-details">
+                    <h4>The Calm Auroville Coastline</h4>
+                    <p>15 minutes away by motorbike. Perfect for surfing and morning beach walks.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Direct deep links to maps -->
+              <a id="lnk-gmap-direct" href="https://maps.google.com/?q=Funk+Monk+Hostel+Auroville+Kottakkarai" target="_blank" class="btn-primary" style="display: inline-block;">View us on Google Maps</a>
+            </div>
+            
+            <div id="map-container-frame" class="map-container-wrapper reveal-on-scroll" style="transition-delay: 200ms;">
+              <div class="map-cover-overlay"></div>
+              <!-- Embedded Google Map centered precisely on Mother Land Farm Vanur Auroville area -->
+              <iframe id="iframe-gmaps" class="embedded-map" src="https://maps.google.com/maps?q=Funk%20Monk%20Hostel,%20Kottakarai,%20Auroville&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12. TESTIMONIALS SLIDER SECTION -->
+      <section id="testimonials" class="testimonials-section">
+        <div class="section-container">
+          <div id="testimonials-header" class="sec-header reveal-on-scroll">
+            <span class="mono-tag">Chronicles of Quietude</span>
+            <h2 id="testimonials-title" class="sec-title text-light">A rating of <span>4.7★</span> by guests.</h2>
+          </div>
+          
+          <div id="testimonial-carousel" class="testimonial-carousel-container reveal-on-scroll" style="transition-delay: 150ms;">
+            <div id="testimonial-track" class="testimonial-track">
+              <!-- Review 1 -->
+              <div class="testimonial-slide">
+                <blockquote class="testimonial-quote">
+                  "Funk Monk is an architectural marvel inside Mother Land Farms. Sleeping in those massive heavy-oak wooden bunks with rich velvet curtains made me feel like I was in a first-class train cabin. I spent my mornings on the tree canopy skydeck and afternoons writing at the lounge atrium. Truly a sanctuary to create own focus."
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="author-rating">★★★★★</div>
+                  <div class="author-info">
+                    <h4>Ananya Ray</h4>
+                    <p>Creative Writer, Bangalore</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Review 2 -->
+              <div class="testimonial-slide">
+                <blockquote class="testimonial-quote">
+                  "The peace here is completely real. No mock setups, no pseudo-wellness traps. Just pure clay brick trails, banyan forests, and incredibly fast Wi-Fi around the workstations. The caretaker tamil-crew recommended us secret dining points. Cannot wait to return for a month-long creative residency."
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="author-rating">★★★★★</div>
+                  <div class="author-info">
+                    <h4>David Miller</h4>
+                    <p>Independent App Developer, Munich</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Review 3 -->
+              <div class="testimonial-slide">
+                <blockquote class="testimonial-quote">
+                  "Perfect for couples desiring authentic living in Kottakarai. The Monk Suite private balcony looks directly into ancient forest canopies. The kitchenette let us boil fresh local tea. It\'s quiet luxury executed with immense care and humbleness. A standard other hotels can only dream of."
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="author-rating">★★★★★</div>
+                  <div class="author-info">
+                    <h4>Suhas & Priya</h4>
+                    <p>Design Duo, Mumbai</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Controls dots -->
+            <div id="testimonial-dots" class="testimonial-controls"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 13. BOOKING PORTAL & CTA SECTION -->
+      <section id="booking-inquiry-portal" class="cta-section">
+        <div class="cta-mesh" aria-hidden="true"></div>
+        <div class="section-container">
+          <div id="cta-content" class="cta-content reveal-on-scroll">
+            <span class="mono-tag">Secure Sanctuary</span>
+            <h2 id="cta-headline" class="cta-title">Begin your <span>creation cycle</span> now.</h2>
+            <p id="cta-sub-lead" class="cta-desc">Choose a date, select your desired sanctuary room, and transfigure your routine inside Auroville canopy shadows.</p>
+            
+            <!-- Floating Fluid Booking Box module -->
+            <div id="booking-box-container" class="booking-form-wrapper">
+              <div class="booking-form-header">
+                <h3 id="booking-box-title" class="serif-display" style="font-size: 1.8rem; letter-spacing: 0.05em; font-weight: 300;">Sanctuary Room Hold Request</h3>
+              </div>
+              <form id="booking-portal-form" class="booking-form-grid">
+                <!-- Field 1: Check In -->
+                <div class="form-group">
+                  <label for="checkin">Inward Journey (Check-In)</label>
+                  <input type="date" id="checkin" required min="2026-05-30" />
+                </div>
+                
+                <!-- Field 2: Check Out -->
+                <div class="form-group">
+                  <label for="checkout">Outward Journey (Check-Out)</label>
+                  <input type="date" id="checkout" required min="2026-05-30" />
+                </div>
+                
+                <!-- Field 3: Room options -->
+                <div class="form-group">
+                  <label for="room-select">Requested Sanctuary</label>
+                  <select id="room-select" name="room-select" required>
+                    <option value="monk-suite" selected>Monk Private Suite (₹3,500/N)</option>
+                    <option value="social-bunks">Social Cabin Bunk Pods (₹1,200/N)</option>
+                  </select>
+                </div>
+                
+                <!-- Field 4: Guests count -->
+                <div class="form-group">
+                  <label for="guests-select">Traveler Count</label>
+                  <select id="guests-select" name="guests-select" required>
+                    <option value="1">1 Mindful Guest</option>
+                    <option value="2">2 Mindful Guests</option>
+                    <option value="3">3 Mindful Guests</option>
+                  </select>
+                </div>
+                
+                <!-- Submission Action spanning columns -->
+                <button type="submit" id="btn-submit-booking" class="btn-primary btn-book-submit" style="grid-column: 1 / -1; margin-top: 1.5rem;">Request Room Hold</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 14. INQUIRY POPUP CONFIRM OVERLAY -->
+      <div id="popup-confirm" class="popup-confirm-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="popup-confirm-card">
+          <div class="popup-icon-ring" aria-hidden="true">&#10003;</div>
+          <h3>Sanctuary On Hold</h3>
+          <p>We have successfully established connection with our Mother Land Farm caretaker desk. An reservation hold request has been mapped for you:</p>
+          
+          <div id="confirm-grid-details" style="display: flex; flex-direction: column; gap: 0.8rem; width: 100%; max-width: 360px; margin: 0 auto 2.5rem; text-align: left; padding: 1.5rem; background: var(--bg-secondary); border-radius: 4px; font-size: 0.95rem; border-left: 3px solid var(--accent-gold); border-top: 1px solid rgba(224, 216, 208, 0.08); border-right: 1px solid rgba(224, 216, 208, 0.08); border-bottom: 1px solid rgba(224, 216, 208, 0.08);">
+            <div><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--accent-terracotta); text-transform: uppercase;">Hold Choice:</span> <strong id="confirm-room-name" style="float: right; font-weight: 500;">Monk Private Suite</strong></div>
+            <div style="border-top: 1px dotted rgba(224, 216, 208, 0.2); padding-top: 0.6rem;"><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--accent-terracotta); text-transform: uppercase;">Duration:</span> <strong id="confirm-nights" style="float: right; font-weight: 500;">4 Nights</strong></div>
+            <div style="border-top: 1px dotted rgba(224, 216, 208, 0.2); padding-top: 0.6rem;"><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--accent-terracotta); text-transform: uppercase;">Valuation Estimate:</span> <strong id="confirm-total-estimate" style="float: right; font-weight: 600; color: var(--accent-terracotta);">₹14,000</strong></div>
+          </div>
+          
+          <p style="font-size: 0.9rem; margin-top: -1.5rem; margin-bottom: 2.2rem;">Our caretaker crew will dial your registered communication number to finalize. Welcome to your own path.</p>
+          <button id="btn-popup-close" class="btn-popup-close">Close Gateway</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- 15. LUXURY CUSTOM FOOTER -->
+    <footer id="main-footer">
+      <div class="section-container">
+        <div id="footer-grid" class="footer-grid">
+          <div class="footer-brand">
+            <h2>FUNK MONK</h2>
+            <p>An award-winning eco-stay and mindful, luxury creative workspace in Auroville's Kottakarai forest. Embrace slow living and create own story.</p>
+            <div class="footer-social-links">
+              <a href="#" class="footer-soc-icon" aria-label="Follow us on Instagram">&#9993;</a>
+              <a href="#" class="footer-soc-icon" aria-label="Connect over WhatsApp">&#9743;</a>
+              <a href="#" class="footer-soc-icon" aria-label="Locate on YouTube">&#10148;</a>
+            </div>
+          </div>
+          
+          <div id="footer-col-nav" class="footer-col">
+            <h4>The Experience</h4>
+            <ul class="footer-col-links">
+              <li><a href="#hero">The Sanctuary</a></li>
+              <li><a href="#experience">The Vibe Philosophy</a></li>
+              <li><a href="#features">Curated Comforts</a></li>
+              <li><a href="#rooms">Dorms & Suites</a></li>
+            </ul>
+          </div>
+          
+          <div id="footer-col-community" class="footer-col">
+            <h4>Nomad Sanctuary</h4>
+            <ul class="footer-col-links">
+              <li><a href="#gallery">Visual Chronicle</a></li>
+              <li><a href="#testimonials">Guest Chimes</a></li>
+              <li><a href="#locate">Distance Spot Maps</a></li>
+              <li><a href="#booking-inquiry-portal">Sanctuary Application</a></li>
+            </ul>
+          </div>
+          
+          <div id="footer-col-contacts" class="footer-col">
+            <h4>Sanctuary Contacts</h4>
+            <div class="footer-contact-info">
+              <div>
+                <span class="contact-lbl">Caretaker Desk</span>
+                <span class="contact-val">SF No. 248/3B 2B, Kottakarai, Auroville, Tamil Nadu</span>
+              </div>
+              <div>
+                <span class="contact-lbl">Secure Digital Mail</span>
+                <span class="contact-val">stay@funkmonkhostel.com</span>
+              </div>
+              <div>
+                <span class="contact-lbl">Hostel Hotlines</span>
+                <span class="contact-val">+91 94432 02483 / +91 413 262 2483</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="footer-bottom-bar" class="footer-bottom">
+          <p id="footer-copy-text" class="footer-copy">&copy; 2026 Funk Monk Hostel. Designed for the co-creation pitch demo. All rights reserved.</p>
+          <div class="footer-legal-links">
+            <a href="#">Privacy Charter</a>
+            <a href="#">Environmental Compact</a>
+            <a href="#">Sanctuary Guidelines</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Native ES module compiler script loading -->
+    <script type="module" src="/src/script.js"></script>
+    <script>
+      // Double click/click dynamic reserve trigger to scroll
+      document.getElementById('nav-reserve-btn').addEventListener('click', () => {
+        document.getElementById('booking-inquiry-portal').scrollIntoView({ behavior: 'smooth' });
+      });
+      document.getElementById('btn-hero-reserve').addEventListener('click', () => {
+        document.getElementById('booking-inquiry-portal').scrollIntoView({ behavior: 'smooth' });
+      });
+    </script>
+  </body>
+</html>
